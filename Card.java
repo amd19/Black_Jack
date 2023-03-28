@@ -4,6 +4,7 @@ public class Card {
     private String suit;
     private String rank;
     private int cardID;
+    private int value;
     private String cardName; 
     private Card nextCard;
 // ************************ CONSTRUCTORS **********************
@@ -23,11 +24,14 @@ public class Card {
         this.rank = rank;
     }
 
-    public void setCardName(String cardName){
-        this.cardName = cardName;
+    public void setCardName(){
+        cardName = rank + " of " + suit;
     }
     public void setNext(Card next){
         nextCard = next;
+    }
+    public void setValue(int value){
+        this.value = value;
     }
 
 //********************* GET FUCNTIONS **********************
@@ -49,6 +53,9 @@ public class Card {
 
     public Card getNextCard(){
         return nextCard;
+    }
+    public int getValue(){
+        return value;
     }
 
 }

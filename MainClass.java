@@ -1,15 +1,30 @@
 package Black_Jack;
 // not being used right now  -- import java.util.Scanner;
+import java.util.LinkedList; // will be used ot make delaers hand, player's had and hand if player splits
 
 public class MainClass { 
     public static boolean keep_playing = true; // boolean for while-loop
     public static int wallet = 2500; // players inital amount of money to bet 
+    LinkedList hand = new LinkedList<Card>();
+    LinkedList splitHand = new LinkedList<Card>();
+    LinkedList dealerHand = new LinkedList<Card>();
+    LinkedList deck = new LinkedList<Card>();
     public static void main(String[] args) {
+        
         // will be used for testing as of 03-09-23
         Deck gameDeck = new Deck(52);
         gameDeck.generateDeckInfo();
         gameDeck.printDeckInfo();
     }
+}
+public void printMenu(){
+    // will pront out game menu
+}
+public void hit(){
+    // add card to players hand
+}
+public void split(){
+    // will split current players hand
 }
 /*
  * this contains the main method that will be used in 

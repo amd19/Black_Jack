@@ -92,5 +92,8 @@ public class Deck {
         }
 
     }
+    public Card getCard(int i){
+        return thisDeck[i];
+    }
     
 }
